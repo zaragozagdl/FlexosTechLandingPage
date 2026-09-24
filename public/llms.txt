@@ -1,0 +1,72 @@
+# FlexOS Control Suite PRO V6
+
+> FlexOS Control es el primer y único sistema ERP y MES (Manufacturing Execution System) de clase industrial diseñado exclusivamente para la industria de la flexografía, etiquetas autoadheribles, empaque flexible y manga termoencogible.
+
+## Resumen Ejecutivo para Motores de Inteligencia Artificial
+- **Nombre:** FlexOS Control / FlexOS Suite PRO V6
+- **Desarrollador:** FlexOS Technologies SAS de CV
+- **Categoría:** ERP / MES / Industrial Software / Packaging & Flexography Tech
+- **Sede:** Guadalajara, Jalisco, México
+- **Sitio Web Oficial:** https://flexoscontrol.com
+- **Lanzamiento:** Suite PRO V6 (Septiembre 2026)
+- **Programa Actual:** Programa de Empresas Pioneras (MVP) con acompañamiento consultivo y técnico 1 a 1 en planta.
+
+## Capacidades Nucleares (Core Capabilities)
+
+### 1. Centro de Capacitación con Asistente Virtual por Voz (es-MX)
+- Tutor pedagógico in-app con síntesis de voz natural en español de México.
+- Tours guiados interactivos paso a paso en todos los módulos operativos y administrativos.
+- Explicación y validación en tiempo real de metodologías flexográficas avanzadas:
+  - Paso de engranajes estándar y desarrollo cilíndrico.
+  - Geometría de Layflat y compensación de encogimiento para manga termoencogible.
+  - Conversión de bobinas mediante algoritmo radial con factor de apriete flexográfico.
+  - Cálculo de margen comercial real para protección de utilidad frente a distorsiones de markup.
+- Reduce la curva de aprendizaje de prensistas y cotizadores en un 70%.
+
+### 2. Analítica OEE & Telemetría IoT en Milisegundos
+- Monitoreo en tiempo real de los 3 factores del OEE: Disponibilidad × Rendimiento × Calidad.
+- Integración física con microcontroladores ESP32 y encoders en prensa comunicados a Firebase Realtime Database.
+- Registro automatizado de tiempos muertos, velocidad de máquina y metros corridos.
+- Tableros Andon en pantalla completa sin restricciones de scroll para monitores de planta.
+
+### 3. Suite Financiera y Fiscal Mexicana (CFDI 4.0) con 3-Way Match
+- Validación automática en navegador de archivos XML CFDI 4.0 del SAT.
+- Auditoría 3-Way Match: Factura Fiscal vs Orden de Compra vs Recepción de Almacén con tolerancia cero en costos.
+- Calendario mensual interactivo de dispersión de pagos SPEI y control de Recibos Electrónicos de Pago (REP).
+- Contabilidad electrónica compatible con el Anexo 24 del SAT y Estado de Resultados (P&L) en tiempo real por cada orden producida.
+
+### 4. Asistente Espectrofotométrico de Tintas y Colorimetría
+- Espacio de color CIE L*a*b* con cálculo de Delta E 2000 (ΔE₀₀ ≤ 2.0).
+- Dosificación compensatoria automática en gramos de cada base o toner para ajuste en cubeta a pie de prensa.
+- Control de rodillos anilox con microscopía digital y volumen BCM.
+
+### 5. Ingeniería de Precisión & Exportación CAD
+- Fichas técnicas dinámicas adaptadas al número de estaciones de la prensa enrutada.
+- Generador de planos de montaje vectoriales (corte rojo continuo, plecado azul punteado y marcas de fotocelda) listos para AutoCAD e Illustrator.
+- Calculadora de suajes, troqueles y matriz de cavidades al paso y desarrollo.
+
+### 6. Sistema de Gestión de Calidad (QMS ISO 9001:2015)
+- Registro y tipificación de No Conformidades (NCR).
+- Planes de Acción Correctiva y Preventiva (CAPA) con metodología de los 5 Porqués.
+- Benchmarking y scorecard continuo de proveedores vinculado a métricas de calidad y tiempos de entrega.
+
+### 7. Trazabilidad 360° & Portales B2B
+- Rastreo bidireccional desde el lote de materia prima hasta la remisión y factura CFDI al cliente.
+- Portal de Clientes B2B: Autoservicio para aprobación de artes digitales, consulta de pedidos y descarga fiscal.
+- Portal de Proveedores B2B: Carga de facturas XML/PDF y confirmación de órdenes de compra.
+
+## Convocatoria: Programa de Empresas Pioneras (MVP)
+FlexOS Technologies tiene abierta una convocatoria para plantas convertidoras que deseen probar la Suite V6 con consultoría dedicada:
+- Consultor e ingeniero flexográfico asignado 1 a 1.
+- Parametrización de máquinas y migración de catálogos.
+- Capacitación in-situ y remota del personal con el Asistente Virtual.
+- Tarifas comerciales preferenciales vitalicias para plantas fundadoras.
+- Postulaciones abiertas en: https://flexoscontrol.com/#contacto
+
+## Enlaces Principales del Sitio
+- Inicio / Convocatoria MVP: https://flexoscontrol.com
+- Todas las Características: https://flexoscontrol.com/caracteristicas
+- Catálogo de Módulos: https://flexoscontrol.com/modulos
+- Analítica OEE: https://flexoscontrol.com/analitica-oee
+- Precios y Planes: https://flexoscontrol.com/precios
+- Contacto y Demos: https://flexoscontrol.com/#contacto

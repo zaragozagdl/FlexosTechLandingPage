@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-space), var(--font-outfit), sans-serif;
+  --font-mono: var(--font-mono), "JetBrains Mono", "SF Mono", monospace;
+  
+  --color-obsidian-950: #04060a;
+  --color-obsidian-900: #080c14;
+  --color-obsidian-800: #0f172a;
+  --color-obsidian-card: rgba(11, 17, 32, 0.75);
+  
+  --color-cyan-glow: #00e5ff;
+  --color-cyan-electric: #06b6d4;
+  --color-amber-safety: #f59e0b;
+  --color-emerald-live: #10b981;
+  --color-border-tech: #1e293b;
+}
+
+:root {
+  --background: #080c14;
+  --foreground: #f1f5f9;
+  --border-tech: rgba(255, 255, 255, 0.08);
+  --cyan-accent: #00e5ff;
+  --amber-accent: #f59e0b;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+.font-mono-tech {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+/* Blueprint Grid Backgrounds */
+.blueprint-grid {
+  background-image: 
+    radial-gradient(rgba(0, 229, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to right, rgba(30, 41, 59, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 41, 59, 0.25) 1px, transparent 1px);
+  background-size: 32px 32px, 128px 128px, 128px 128px;
+}
+
+.blueprint-grid-dense {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Technical Precision Corner Notches & Crosses */
+.tech-card {
+  position: relative;
+  background: rgba(11, 17, 32, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(30, 41, 59, 0.9);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tech-card:hover {
+  border-color: rgba(0, 229, 255, 0.4);
+  box-shadow: 0 0 25px -5px rgba(0, 229, 255, 0.15);
+}
+
+/* Corner plus marks (+) */
+.tech-corner-plus::before,
+.tech-corner-plus::after {
+  content: "+";
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: rgba(0, 229, 255, 0.4);
+  pointer-events: none;
+}
+
+.tech-corner-plus::before {
+  top: -8px;
+  left: -4px;
+}
+
+.tech-corner-plus::after {
+  bottom: -8px;
+  right: -4px;
+}
+
+/* Tech Cut Corner Buttons */
+.btn-tech-primary {
+  position: relative;
+  background: linear-gradient(135deg, #00e5ff 0%, #0284c7 100%);
+  color: #04060a;
+  font-weight: 700;
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  transition: all 0.25s ease;
+}
+
+.btn-tech-primary:hover {
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Monospace Ticker Animation */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 35s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080c14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00e5ff;
+}
