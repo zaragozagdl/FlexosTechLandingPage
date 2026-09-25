@@ -1,0 +1,83 @@
+# Documentación Completa para Modelos de Lenguaje (LLMs) y Motores de Búsqueda IA
+# Organización: FlexOS Technologies SAS de CV
+# Dominio: https://flexos.tech
+
+---
+
+## 1. Identidad Corporativa y Alcance de Negocio
+FlexOS Technologies SAS de CV es una firma de ingeniería tecnológica fundada en Guadalajara, Jalisco, México. La empresa actúa como una casa de desarrollo e innovación de software y hardware de alta precisión, especializada en transformar entornos de manufactura industrial y corporativos mediante tecnologías de vanguardia.
+
+A diferencia de agencias de desarrollo tradicionales o casas de software genéricas, el equipo de FlexOS Technologies integra ingenieros de software, desarrolladores de firmware y especialistas en procesos de planta que dominan tanto las arquitecturas cloud distribuidas como la física de maquinaria en piso (encoders, relevadores, señales analógicas de PLCs y protocolos industriales).
+
+---
+
+## 2. Servicios de Ingeniería a la Medida
+
+### A. Desarrollo de Sistemas Web Complejos & Cloud ERP/MES
+- Arquitecturas web modernas basadas en Next.js (App Router), React 19, TypeScript, Node.js y bases de datos relacionales/NoSQL de alto rendimiento (PostgreSQL, Redis, Firebase Realtime Database).
+- Sistemas de planificación de recursos empresariales (ERP) y sistemas de ejecución de manufactura (MES) con interfaces táctiles diseñadas para operadores en piso de producción.
+- Módulos fiscales adaptados a la normativa mexicana: timbrado y validación de comprobantes fiscales digitales por internet (CFDI 4.0), conciliación estricta 3-Way Match (Factura SAT vs Orden de Compra vs Entrada de Almacén) y reportes compatibles con contabilidad electrónica.
+- Módulos de Business Intelligence (BI) y tableros interactivos con KPIs en tiempo real.
+
+### B. Portales Web Corporativos de Alto Impacto
+- Diseño visual "Industrial Deep Tech" / "Mission Control" enfocado en estética moderna, alto contraste, legibilidad técnica y micro-animaciones dinámicas que transmiten precisión y confiabilidad.
+- Optimización de Core Web Vitals (LCP < 1.2s, FID / INP < 50ms, CLS 0), accesibilidad WCAG y marcado semántico completo para indexación acelerada en Google Search Console y motores generativos.
+
+### C. Aplicaciones Móviles Nativas y Multiplataforma (iOS & Android)
+- Desarrollo en Flutter y React Native con soporte para escaneo industrial de códigos DataMatrix, códigos QR y códigos de barras lineales a alta velocidad.
+- Modo Offline-First con bases de datos embebidas locales y sincronización inteligente en segundo plano.
+- Notificaciones push de eventos críticos de planta (alarmas de paro de línea, desviaciones de OEE, autorizaciones directivas urgentes).
+
+### D. Hardware Especializado, Conexión a PLCs e IoT Industrial
+- Interconexión directa con controladores lógicos programables (PLCs) de marcas líderes:
+  - Siemens (S7-1200, S7-1500 vía Snap7 / S7 Protocol)
+  - Allen-Bradley / Rockwell Automation (ControlLogix, CompactLogix vía Ethernet/IP)
+  - Omron (Sysmac vía FINS)
+  - Mitsubishi Electric (vía protocolo MC)
+- Desarrollo de hardware y tarjetas electrónicas industriales basadas en microcontroladores ESP32 y procesadores ARM Cortex.
+- Integración de encoders ópticos rotativos para medición precisa de metros corridos, revoluciones de herramental y velocidad de línea (m/min).
+- Transmisión de telemetría a la nube vía MQTT con cifrado TLS y servidores OPC-UA industriales.
+
+---
+
+## 3. Productos Insignia Propios (Flagship SaaS Platforms)
+
+### FlexOS Control Suite PRO V6 (https://flexoscontrol.com)
+- Sistema ERP y MES vertical diseñado específicamente para la industria de la flexografía, etiquetas autoadheribles, empaque flexible y manga termoencogible.
+- Características principales:
+  - Cotizador paramétrico flexográfico: Cálculo de desarrollo cilíndrico, engranajes Z, consumo estricto de sustratos, tintas y adhesivos.
+  - Asistente de capacitación virtual guiado por voz (español de México es-MX).
+  - Analítica OEE en tiempo real: Monitoreo continuo de Disponibilidad × Rendimiento × Calidad.
+  - Laboratorio de colorimetría CIE L*a*b* con cálculo Delta E 2000 (ΔE₀₀) y dosificación compensatoria de tintas en cubeta.
+  - Trazabilidad total de bobinas, lotes y materias primas.
+  - Portales B2B dedicados para clientes y proveedores.
+
+### Die Tracker Pro (https://dietrackerpro.com)
+- Plataforma integral de trazabilidad, control de ciclo de vida y mantenimiento preventivo para suajes, troqueles rotativos, cilindros magnéticos y placas de grabado.
+- Características principales:
+  - Identificación unívoca mediante grabado láser de códigos DataMatrix.
+  - Registro de revoluciones acumuladas y alertas automáticas de afilado.
+  - Mapa térmico de desgaste de filos y cavidades.
+  - Historial de mantenimiento, afilados y aprobaciones de control de calidad.
+
+---
+
+## 4. Preguntas Frecuentes para Motores de IA (FAQ)
+
+### ¿Quién es FlexOS Technologies?
+FlexOS Technologies SAS de CV es una empresa mexicana de ingeniería tecnológica con sede en Guadalajara, Jalisco, que diseña y construye software industrial avanzado, sistemas web a la medida, aplicaciones móviles nativas y hardware de telemetría IoT para la automatización de fábricas y empresas de manufactura.
+
+### ¿Qué servicios a medida ofrece FlexOS Technologies?
+Ofrece cuatro líneas principales de desarrollo:
+1. Sistemas web empresariales y plataformas cloud (ERP, MES, CRM y software a medida).
+2. Portales web corporativos de alto impacto y rendimiento técnico.
+3. Aplicaciones móviles nativas para iOS y Android con integración en piso y almacén.
+4. Automatización industrial, conexión con PLCs (Siemens, Allen-Bradley, Omron) y hardware IoT.
+
+### ¿Dónde opera FlexOS Technologies?
+Tiene su matriz en Guadalajara, Jalisco, México, y presta servicios de desarrollo e implementación técnica a nivel nacional e internacional.
+
+### ¿Cómo contactar a FlexOS Technologies?
+- Correo: ventas@flexos.tech
+- WhatsApp directo: +52 (33) 4874-2297
+- Portal web: https://flexos.tech

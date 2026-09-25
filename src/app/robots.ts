@@ -1,12 +1,12 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
-        disallow: ['/api/'],
+        allow: ['/', '/api/ai-context'],
+        disallow: ['/api/contacto'],
       },
       {
         userAgent: [
@@ -15,18 +15,22 @@ export default function robots(): MetadataRoute.Robots {
           'GoogleOther',
           'GPTBot',
           'ChatGPT-User',
+          'OAI-SearchBot',
           'PerplexityBot',
           'ClaudeBot',
           'anthropic-ai',
+          'Applebot',
           'Applebot-Extended',
+          'bingbot',
           'Bytespider',
-          'bingbot'
+          'cohere-ai',
+          'Amazonbot'
         ],
-        allow: '/',
-        disallow: ['/api/'],
+        allow: ['/', '/api/ai-context'],
+        disallow: ['/api/contacto'],
       }
     ],
-    sitemap: 'https://flexoscontrol.com/sitemap.xml',
-    host: 'https://flexoscontrol.com',
-  }
+    sitemap: 'https://flexos.tech/sitemap.xml',
+    host: 'https://flexos.tech',
+  };
 }

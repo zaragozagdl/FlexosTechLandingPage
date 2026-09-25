@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight, Radio, Shield, Terminal, Mail, Phone, MapPin } from "lucide-react";
 
 export default function TechnicalFooter() {
@@ -70,7 +71,7 @@ export default function TechnicalFooter() {
               </li>
               <li className="pt-2">
                 <a 
-                  href="#ecosistema" 
+                  href="/#ecosistema" 
                   className="hover:text-white flex items-center gap-1.5 transition-colors group"
                 >
                   <span className="group-hover:text-cyan-400 font-bold">KromaNode Lab</span>
@@ -131,12 +132,12 @@ export default function TechnicalFooter() {
               <Shield className="w-3 h-3 text-cyan-400" />
               Secreto Industrial & Propiedad Intelectual Protegida
             </span>
-            <a href="https://flexoscontrol.com/privacidad" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">
-              Privacidad
-            </a>
-            <a href="https://flexoscontrol.com/terminos" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">
-              Términos
-            </a>
+            <Link href="/privacidad" className="hover:text-slate-300 transition-colors">
+              Aviso de Privacidad
+            </Link>
+            <Link href="/terminos" className="hover:text-slate-300 transition-colors">
+              Términos de Servicio
+            </Link>
           </div>
         </div>
 

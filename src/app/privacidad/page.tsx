@@ -1,22 +1,25 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/layout/Navbar";
+import UmbrellaNavbar from "@/components/umbrella/Navbar";
 import PrivacyPolicy from "@/components/sections/PrivacyPolicy";
-import Footer from "@/components/layout/Footer";
+import TechnicalFooter from "@/components/umbrella/TechnicalFooter";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad | FlexOS Control",
+  title: "Aviso de Privacidad | FlexOS Technologies",
   description:
-    "Conoce cómo FlexOS Control recolecta, usa y protege tus datos personales conforme a la Ley Federal de Protección de Datos Personales en Posesión de Particulares (LFPDPPP).",
+    "Conoce cómo FlexOS Technologies SAS de CV recolecta, procesa y protege los datos personales, telemetría y confidencialidad industrial conforme a la Ley Federal de Protección de Datos Personales en Posesión de Particulares (LFPDPPP).",
+  alternates: {
+    canonical: "https://flexos.tech/privacidad",
+  },
 };
 
 export default function PrivacidadPage() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-20">
+    <div className="bg-[#04060a] text-slate-100 min-h-screen flex flex-col justify-between">
+      <UmbrellaNavbar />
+      <main className="pt-20 flex-grow">
         <PrivacyPolicy />
       </main>
-      <Footer />
-    </>
+      <TechnicalFooter />
+    </div>
   );
 }

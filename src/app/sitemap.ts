@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://flexoscontrol.com";
+  const baseUrl = "https://flexos.tech";
   const currentDate = new Date();
 
   return [
@@ -15,13 +15,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/caracteristicas`,
       lastModified: currentDate,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/modulos`,
       lastModified: currentDate,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/analitica-oee`,
@@ -33,19 +33,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/precios`,
       lastModified: currentDate,
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/privacidad`,
       lastModified: currentDate,
       changeFrequency: "yearly",
-      priority: 0.4,
+      priority: 0.3,
     },
     {
       url: `${baseUrl}/terminos`,
       lastModified: currentDate,
       changeFrequency: "yearly",
-      priority: 0.4,
+      priority: 0.3,
     },
   ];
 }

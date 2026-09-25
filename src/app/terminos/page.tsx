@@ -1,22 +1,25 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/layout/Navbar";
+import UmbrellaNavbar from "@/components/umbrella/Navbar";
 import TermsConditions from "@/components/sections/TermsConditions";
-import Footer from "@/components/layout/Footer";
+import TechnicalFooter from "@/components/umbrella/TechnicalFooter";
 
 export const metadata: Metadata = {
-  title: "Términos y Condiciones | FlexOS Control",
+  title: "Términos y Condiciones de Servicio | FlexOS Technologies",
   description:
-    "Consulta los términos y condiciones de uso de la plataforma FlexOS Control ERP/MES para la industria flexográfica.",
+    "Consulta los términos y condiciones de uso, licenciamiento de software y servicios de ingeniería industrial de FlexOS Technologies SAS de CV.",
+  alternates: {
+    canonical: "https://flexos.tech/terminos",
+  },
 };
 
 export default function TerminosPage() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-20">
+    <div className="bg-[#04060a] text-slate-100 min-h-screen flex flex-col justify-between">
+      <UmbrellaNavbar />
+      <main className="pt-20 flex-grow">
         <TermsConditions />
       </main>
-      <Footer />
-    </>
+      <TechnicalFooter />
+    </div>
   );
 }

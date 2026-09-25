@@ -4,7 +4,6 @@ import TelemetryStrip from "@/components/umbrella/TelemetryStrip";
 import CustomEngineering from "@/components/umbrella/CustomEngineering";
 import FlagshipBento from "@/components/umbrella/FlagshipBento";
 import CoreCapabilities from "@/components/umbrella/CoreCapabilities";
-import IndustrialVerticals from "@/components/umbrella/IndustrialVerticals";
 import IndustrialCTA from "@/components/umbrella/IndustrialCTA";
 import TechnicalFooter from "@/components/umbrella/TechnicalFooter";
 
@@ -18,7 +17,6 @@ export default function Home() {
         <CustomEngineering />
         <FlagshipBento />
         <CoreCapabilities />
-        <IndustrialVerticals />
         <IndustrialCTA />
       </main>
       <TechnicalFooter />

@@ -15,11 +15,10 @@ export default function UmbrellaNavbar() {
   }, []);
 
   const navLinks = [
-    { name: "Plataformas SaaS", href: "#ecosistema" },
-    { name: "Software a Medida", href: "#servicios-ingenieria" },
-    { name: "Hardware & PLCs", href: "#servicios-ingenieria" },
-    { name: "Capacidades", href: "#capacidades" },
-    { name: "Verticales", href: "#verticales" },
+    { name: "Plataformas SaaS", href: "/#ecosistema" },
+    { name: "Software a Medida", href: "/#servicios-ingenieria" },
+    { name: "Hardware & PLCs", href: "/#servicios-ingenieria" },
+    { name: "Capacidades", href: "/#capacidades" },
   ];
 
   return (
@@ -63,13 +62,13 @@ export default function UmbrellaNavbar() {
           {/* Right: Technical Action Buttons */}
           <div className="hidden sm:flex items-center gap-3">
             <a
-              href="#ecosistema"
+              href="/#ecosistema"
               className="px-3.5 py-1.5 rounded-md border border-[#1e293b] hover:border-slate-500 text-xs font-mono-tech text-slate-300 hover:text-white transition-all bg-[#0a0f1d]/60"
             >
               Acceso a Plataformas
             </a>
             <a
-              href="#contacto"
+              href="/#contacto"
               className="btn-tech-primary px-4 py-2 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-lg shadow-cyan-500/20"
             >
               <span>Agendar Demo</span>
@@ -107,7 +106,7 @@ export default function UmbrellaNavbar() {
           </div>
           <div className="mt-5 pt-4 border-t border-[#1e293b] flex flex-col gap-2.5">
             <a
-              href="#contacto"
+              href="/#contacto"
               onClick={() => setMobileMenuOpen(false)}
               className="btn-tech-primary w-full py-2.5 text-center text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2"
             >

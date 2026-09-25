@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "flexos_technologies",
+  "name_for_human": "FlexOS Technologies",
+  "description_for_model": "Official technical overview and discovery endpoints for FlexOS Technologies SAS de CV. Specialized in industrial software engineering, custom enterprise cloud systems (ERP, MES), native mobile apps (iOS/Android), PLC integration (Siemens, Allen-Bradley, Omron) and proprietary SaaS platforms (FlexOS Control and Die Tracker Pro).",
+  "description_for_human": "Ingeniería de software industrial, desarrollo de aplicaciones móviles, hardware con PLCs y plataformas ERP/MES de manufactura.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://flexos.tech/llms.txt"
+  },
+  "logo_url": "https://flexos.tech/logo_technologies.png",
+  "contact_email": "ventas@flexos.tech",
+  "legal_info_url": "https://flexos.tech/terminos"
+}

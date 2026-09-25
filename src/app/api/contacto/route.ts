@@ -53,44 +53,73 @@ export async function POST(req: Request) {
       },
     });
 
-    const isMVP = tipoSolicitud?.includes("MVP");
-    const subjectPrefix = isMVP ? "🌟 POSTULACIÓN MVP PIONEROS" : "📩 Nuevo contacto";
+    const resolvedSolicitud = tipoSolicitud || body.asunto || "Contacto General";
+    const isMVP = resolvedSolicitud?.includes("MVP");
+    const subjectPrefix = isMVP ? "🌟 POSTULACIÓN MVP PIONEROS" : "📩 Nuevo Contacto";
 
     await transporter.sendMail({
-      from: `"FlexOS Control Web" <${emailUser}>`,
+      from: `"FlexOS Technologies" <${emailUser}>`,
       to: destEmail,
       replyTo: email,
-      subject: `${subjectPrefix}: ${nombre} — ${empresa}`,
+      subject: `[FlexOS Technologies] ${subjectPrefix}: ${nombre} — ${empresa}`,
       html: `
         <!DOCTYPE html>
         <html lang="es">
-        <body style="font-family: Arial, sans-serif; background:#f4f4f4; padding:20px;">
-          <div style="max-width:600px; margin:0 auto; background:white; border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.08);">
-            <div style="background:${isMVP ? "linear-gradient(135deg,#0284c7,#1e1b4b)" : "linear-gradient(135deg,#0ea5e9,#0284c7)"}; padding:28px 32px;">
-              <h1 style="color:white; margin:0; font-size:22px;">
-                ${isMVP ? "🌟 Postulación Programa MVP — Empresas Pioneras" : "Nuevo Contacto — FlexOS Control"}
+        <body style="font-family: 'Segoe UI', Arial, sans-serif; background:#080c14; padding:24px; color:#334155;">
+          <div style="max-width:620px; margin:0 auto; background:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.25); border:1px solid #e2e8f0;">
+            <div style="background:linear-gradient(135deg, #04060a 0%, #0a1122 60%, #0284c7 100%); padding:32px 36px; border-bottom:3px solid #06b6d4;">
+              <div style="font-size:11px; font-weight:700; color:#06b6d4; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:6px;">
+                FLEXOS TECHNOLOGIES • PORTAL CORPORATIVO
+              </div>
+              <h1 style="color:#ffffff; margin:0; font-size:22px; font-weight:700; line-height:1.3;">
+                ${isMVP ? "🌟 Postulación Programa MVP — FlexOS Technologies" : "Nuevo Contacto — FlexOS Technologies"}
               </h1>
-              <p style="color:#bae6fd; margin:6px 0 0;">
-                ${isMVP ? "Empresa interesada en probar FlexOS Suite V6 con acompañamiento" : "Formulario de solicitud de información"}
+              <p style="color:#94a3b8; margin:8px 0 0; font-size:13px;">
+                ${isMVP ? "Empresa interesada en el Programa MVP con acompañamiento técnico en planta" : "Solicitud de servicios de software, ingeniería a medida o demostración técnica"}
               </p>
             </div>
-            <div style="padding:28px 32px;">
-              <table style="width:100%; border-collapse:collapse;">
-                <tr><td style="padding:10px 0; color:#64748b; font-size:13px; width:160px;">Interés Principal</td><td style="padding:10px 0; font-weight:bold; color:${isMVP ? "#0284c7" : "#0f172a"};">${tipoSolicitud || "General"}</td></tr>
-                <tr style="background:#f8fafc;"><td style="padding:10px 8px; color:#64748b; font-size:13px;">Nombre</td><td style="padding:10px 8px; font-weight:bold; color:#0f172a;">${nombre}</td></tr>
-                <tr><td style="padding:10px 0; color:#64748b; font-size:13px;">Empresa / Planta</td><td style="padding:10px 0; font-weight:bold; color:#0f172a;">${empresa}</td></tr>
-                <tr style="background:#f8fafc;"><td style="padding:10px 8px; color:#64748b; font-size:13px; vertical-align:top;">Líneas / Procesos</td><td style="padding:10px 8px; color:#0f172a;">${procesosHtml}</td></tr>
-                <tr><td style="padding:10px 0; color:#64748b; font-size:13px;">Tamaño de Planta</td><td style="padding:10px 0; color:#0f172a;">${tamano || "No especificado"}</td></tr>
-                <tr style="background:#f8fafc;"><td style="padding:10px 8px; color:#64748b; font-size:13px;">Email</td><td style="padding:10px 8px;"><a href="mailto:${email}" style="color:#0ea5e9;">${email}</a></td></tr>
-                <tr><td style="padding:10px 0; color:#64748b; font-size:13px;">Teléfono / WhatsApp</td><td style="padding:10px 0; color:#0f172a;">${telefono || "No proporcionado"}</td></tr>
+            
+            <div style="padding:28px 36px;">
+              <table style="width:100%; border-collapse:collapse; font-size:13px;">
+                <tr>
+                  <td style="padding:10px 0; color:#64748b; width:150px; font-weight:600;">Tipo de Solicitud</td>
+                  <td style="padding:10px 0; font-weight:bold; color:#0284c7;">${resolvedSolicitud}</td>
+                </tr>
+                <tr style="background:#f8fafc;">
+                  <td style="padding:10px 10px; color:#64748b; font-weight:600;">Nombre</td>
+                  <td style="padding:10px 10px; font-weight:bold; color:#0f172a;">${nombre}</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0; color:#64748b; font-weight:600;">Empresa / Planta</td>
+                  <td style="padding:10px 0; font-weight:bold; color:#0f172a;">${empresa}</td>
+                </tr>
+                <tr style="background:#f8fafc;">
+                  <td style="padding:10px 10px; color:#64748b; vertical-align:top; font-weight:600;">Líneas / Procesos</td>
+                  <td style="padding:10px 10px; color:#0f172a;">${procesosHtml}</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0; color:#64748b; font-weight:600;">Tamaño de Organización</td>
+                  <td style="padding:10px 0; color:#0f172a;">${tamano || "No especificado"}</td>
+                </tr>
+                <tr style="background:#f8fafc;">
+                  <td style="padding:10px 10px; color:#64748b; font-weight:600;">Email Corporativo</td>
+                  <td style="padding:10px 10px;"><a href="mailto:${email}" style="color:#0284c7; font-weight:600; text-decoration:none;">${email}</a></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0; color:#64748b; font-weight:600;">Teléfono / WhatsApp</td>
+                  <td style="padding:10px 0; color:#0f172a; font-weight:bold;">${telefono || "No proporcionado"}</td>
+                </tr>
               </table>
-              <div style="margin-top:20px; padding:16px; background:#f0f9ff; border-left:4px solid #0ea5e9; border-radius:6px;">
-                <p style="margin:0; color:#64748b; font-size:13px; margin-bottom:6px;">Detalles o Desafíos de la Planta</p>
-                <p style="margin:0; color:#0f172a;">${mensaje.replace(/\n/g, "<br/>")}</p>
+
+              <div style="margin-top:24px; padding:18px; background:#f0f9ff; border-left:4px solid #0284c7; border-radius:8px;">
+                <p style="margin:0 0 6px; color:#0369a1; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">Requerimiento / Mensaje del Proyecto</p>
+                <p style="margin:0; color:#0f172a; font-size:14px; line-height:1.6;">${mensaje.replace(/\n/g, "<br/>")}</p>
               </div>
             </div>
-            <div style="padding:16px 32px; background:#f8fafc; text-align:center; font-size:12px; color:#94a3b8;">
-              FlexOS Technologies SAS de CV — flexoscontrol.com
+
+            <div style="padding:20px 36px; background:#f8fafc; border-top:1px solid #e2e8f0; text-align:center; font-size:12px; color:#64748b; line-height:1.6;">
+              <strong style="color:#0f172a;">FlexOS Technologies SAS de CV</strong> — <a href="https://flexostechnologies.com" style="color:#0284c7; text-decoration:none;">flexostechnologies.com</a><br/>
+              Guadalajara, Jalisco, México • Soluciones de Software Industrial, Apps Móviles & Hardware IoT
             </div>
           </div>
         </body>
