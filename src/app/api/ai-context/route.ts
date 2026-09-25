@@ -52,6 +52,15 @@ export async function GET() {
       llms_full_txt: "https://flexos.tech/llms-full.txt",
       sitemap: "https://flexos.tech/sitemap.xml",
       robots: "https://flexos.tech/robots.txt"
+    },
+    canonical_urls: {
+      portal: "https://flexos.tech",
+      servicios_ingenieria: "https://flexos.tech/#servicios-ingenieria",
+      ecosistema: "https://flexos.tech/#ecosistema",
+      capacidades: "https://flexos.tech/#capacidades",
+      contacto: "https://flexos.tech/#contacto",
+      privacidad: "https://flexos.tech/privacidad",
+      terminos: "https://flexos.tech/terminos"
     }
   });
 }

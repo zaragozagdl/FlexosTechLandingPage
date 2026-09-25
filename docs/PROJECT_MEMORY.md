@@ -20,18 +20,17 @@ Este repositorio aloja el sitio web corporativo y de adquisición de clientes pa
 
 ---
 
-## 2. 🗺️ Mapa de Rutas y Páginas
+## 2. 🗺️ Mapa de Rutas y Páginas Oficiales (`flexos.tech`)
 
 | Ruta | Descripción | Componentes Clave |
 | :--- | :--- | :--- |
-| `/` | Landing page principal de adquisición comercial y programa MVP | `Hero`, `CoreFeatures`, `VirtualAssistantTraining`, `AIPrepressAnalyzer`, `ModulesShowcase`, `PortalsB2B`, `TraceabilityFlow`, `SpecializedEngineering`, `Ecosystem`, `WhyFlexOS`, `ContactForm`, `Navbar`, `Footer` |
-| `/caracteristicas` | Catálogo detallado de capacidades tecnológicas y diferenciadores V6 | `AllFeatures` |
-| `/modulos` | Desglose funcional profundo de los 10 módulos del ERP/MES | `ModulosPage` con especificaciones de ingeniería, piso, ventas, finanzas y calidad |
-| `/analitica-oee` | Página vertical de Efectividad Global de Equipos y telemetría | Visualizador de ecuación D × R × C, tableros Andon y OEE |
-| `/precios` | Planes comerciales (Starter, Professional, Enterprise) y cotización | `Pricing`, `ContactForm` |
-| `/privacidad` | Aviso de privacidad y tratamiento de datos industriales | `PrivacyPolicy` |
-| `/terminos` | Términos y condiciones del servicio y licenciamiento | `TermsConditions` |
-| `/api/contacto` | Endpoint POST backend para despacho seguro de leads y postulantes MVP | `nodemailer` hacia la cuenta corporativa |
+| `/` | Landing corporativa de ingeniería: 4 pilares a medida, plataformas insignia, capacidades y contacto | `UmbrellaNavbar`, `UmbrellaHero`, `TelemetryStrip`, `CustomEngineering`, `FlagshipBento`, `CoreCapabilities`, `IndustrialCTA`, `TechnicalFooter` |
+| `/privacidad` | Aviso de privacidad oficial conforme a la LFPDPPP | `UmbrellaNavbar`, `PrivacyPolicy`, `TechnicalFooter` |
+| `/terminos` | Términos y condiciones del servicio y licenciamiento de software | `UmbrellaNavbar`, `TermsConditions`, `TechnicalFooter` |
+| `/api/contacto` | Endpoint POST backend para despacho seguro de cotizaciones técnicas | `nodemailer` hacia la cuenta corporativa `ventas@flexos.tech` |
+| `/api/ai-context` | Endpoint JSON con el grafo de conocimiento para agentes de IA | `NextResponse.json` |
+| `/sitemap.xml` | Mapa de sitio canónico de `https://flexos.tech` | Generado dinámicamente con Next.js Metadata |
+| `/robots.txt` | Directivas de indexación y rastreo para Googlebot y bots de IA | Generado dinámicamente con Next.js Metadata |
 
 ---
 
@@ -53,6 +52,7 @@ A partir de septiembre de 2026, **TODA modificación, adición o refactorizació
 
 | Fecha | Módulo / Archivos Impactados | Resumen Técnico de la Modificación | Documento Walkthrough |
 | :--- | :--- | :--- | :--- |
+| **2026-09-24** | **Arquitectura de Rutas & Enlaces Canónicos (`sitemap.ts`, `llms.txt`, `src/app/`, `api/ai-context/route.ts`)** | **Depuración de Rutas de FlexOS Control y Homologación Canónica a FlexOS Technologies:** (1) Eliminación de directorios y páginas heredadas de FlexOS Control (`/caracteristicas`, `/modulos`, `/analitica-oee`, `/precios`); (2) Ajuste estricto de enlaces canónicos en `llms.txt` y `api/ai-context` a la entidad matriz `flexos.tech` (`/`, `/#servicios-ingenieria`, `/#ecosistema`, `/#capacidades`, `/#contacto`, `/privacidad`, `/terminos`), deslindando los productos SaaS independientes (`flexoscontrol.com`, `dietrackerpro.com`); (3) Limpieza de `sitemap.ts` reduciéndolo a las 3 rutas reales públicas de la empresa matriz. Verificado con `npm run build` (código 0, 10/10 rutas). | [`docs/walkthroughs/2026-09-24_depuracion_rutas_flexoscontrol_y_enlaces_canonicos_flexostech.md`](docs/walkthroughs/2026-09-24_depuracion_rutas_flexoscontrol_y_enlaces_canonicos_flexostech.md) |
 | **2026-09-24** | **Páginas Legales & Enlaces (`TechnicalFooter.tsx`, `Navbar.tsx`, `privacidad/page.tsx`, `terminos/page.tsx`, `PrivacyPolicy.tsx`, `TermsConditions.tsx`)** | **Corrección de Enlaces y Homologación de Páginas Legales a FlexOS Technologies:** (1) Se reemplazaron los enlaces externos a `flexoscontrol.com` en el footer por componentes `<Link>` de Next.js dirigidos a las rutas internas `/privacidad` y `/terminos`; (2) Se actualizaron `src/app/privacidad/page.tsx` y `src/app/terminos/page.tsx` integrando `UmbrellaNavbar` y `TechnicalFooter` con metadatos canónicos a `https://flexos.tech`; (3) Se rediseñaron los componentes `PrivacyPolicy.tsx` y `TermsConditions.tsx` bajo la estética *Dark Tech* del portal y con alcance legal a las plataformas SaaS, desarrollo a medida y automatización de FlexOS Technologies SAS de CV; (4) Se prefijaron los enlaces de navegación en `Navbar.tsx` para funcionar desde cualquier subpágina; (5) Se homologó el dominio oficial `https://flexos.tech` en `sitemap.ts`, `layout.tsx`, `llms.txt` y `llms-full.txt`. Verificado con `npm run build` (código 0). | [`docs/walkthroughs/2026-09-24_actualizacion_rutas_legales_privacidad_terminos_flexostech.md`](docs/walkthroughs/2026-09-24_actualizacion_rutas_legales_privacidad_terminos_flexostech.md) |
 | **2026-09-24** | **SEO Técnico, Motores de Búsqueda & Agentes de IA (`robots.ts`, `sitemap.ts`, `layout.tsx`, `llms.txt`, `llms-full.txt`, `ai-plugin.json`, `/api/ai-context`)** | **Suite Integral de Optimización para Buscadores y Agentes de IA:** (1) Creación de `llms.txt` y `llms-full.txt` con la arquitectura, 4 pilares de ingeniería, FAQs y plataformas insignia para ChatGPT Search, Perplexity, Claude y Gemini; (2) Implementación del manifiesto estándar de agentes `public/.well-known/ai-plugin.json` y el endpoint REST JSON de alta velocidad `src/app/api/ai-context/route.ts` para ingesta directa por sistemas autónomos de IA; (3) Actualización de `robots.ts` permitiendo explícitamente el rastreo a bots de IA (`OAI-SearchBot`, `GPTBot`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`, `Applebot-Extended`, `Amazonbot`) y habilitando `/api/ai-context` mientras se protege `/api/contacto`; (4) Actualización de `sitemap.ts` al dominio canónico `https://flexostechnologies.com`; (5) Grafo semántico Schema.org JSON-LD enriquecido (`Organization`, `WebSite`, `SoftwareApplication`, `FAQPage`) y soporte para etiqueta de verificación de Google Search Console. Verificado con `npm run build` (código 0). | [`docs/walkthroughs/2026-09-24_suite_avanzada_optimizacion_ia_buscadores.md`](docs/walkthroughs/2026-09-24_suite_avanzada_optimizacion_ia_buscadores.md) |
 | **2026-09-24** | **Landing Page & Navbar (`src/app/page.tsx`, `Navbar.tsx`)** | **Ocultación del Módulo de Verticales de Manufactura:** Se desactivó el renderizado del componente `IndustrialVerticals.tsx` en la landing page principal y se retiró el enlace correspondiente de la barra de navegación (`Navbar.tsx`), focalizando la navegación en las plataformas SaaS insignia, servicios de ingeniería y capacidades técnicas. Verificado con `npm run build` (código 0). | [`docs/walkthroughs/2026-09-24_ocultar_modulo_verticales_manufactura.md`](docs/walkthroughs/2026-09-24_ocultar_modulo_verticales_manufactura.md) |

@@ -7,9 +7,9 @@
 - **Dominio Oficial:** https://flexos.tech
 - **Sede:** Guadalajara, Jalisco, México
 - **Alcance Operativo:** Internacional (México, América Latina y Norteamérica)
-- **Especialidad:** Ingeniería de Software Industrial, Arquitectura Cloud ERP/MES, Integración de PLCs y Telemetría en Tiempo Real
-- **Productos Insignia Propios:**
-  - FlexOS Control (ERP & MES flexográfico): https://flexoscontrol.com
+- **Especialidad:** Ingeniería de Software Industrial, Arquitectura Cloud, Apps Móviles Nativas, Integración de PLCs y Telemetría IoT en Tiempo Real
+- **Plataformas SaaS Insignia Desarrolladas por la Firma:**
+  - FlexOS Control (ERP & MES para flexografía y empaque): https://flexoscontrol.com
   - Die Tracker Pro (Gestión del ciclo de vida de suajes y troqueles): https://dietrackerpro.com
 
 ## Pilares de Ingeniería y Servicios a la Medida
@@ -35,20 +35,18 @@
 - Protocolos industriales de alta velocidad: MQTT, OPC-UA, Modbus TCP/RTU.
 - Adquisición de telemetría de prensas y cálculo automatizado de Efectividad Global de Equipos (OEE).
 
-## Suites SaaS Insignia Desarrolladas por la Casa
+## Enlaces Canónicos de FlexOS Technologies (flexos.tech)
+- [Portal Matriz](https://flexos.tech): Inicio institucional y presentación corporativa.
+- [Servicios de Ingeniería](https://flexos.tech/#servicios-ingenieria): Desarrollo web cloud, apps móviles, hardware y PLCs.
+- [Ecosistema de Plataformas](https://flexos.tech/#ecosistema): Soluciones SaaS insignia de la empresa.
+- [Capacidades Técnicas](https://flexos.tech/#capacidades): Stack tecnológico y arquitectura.
+- [Contacto Técnico](https://flexos.tech/#contacto): Formulario terminal y solicitud de cotización.
+- [Aviso de Privacidad](https://flexos.tech/privacidad): Política de protección de datos personales de la empresa.
+- [Términos y Condiciones](https://flexos.tech/terminos): Condiciones de servicio y licenciamiento.
 
-- [FlexOS Control](https://flexoscontrol.com): Suite ERP y MES integral diseñada para la industria de conversión gráfica, flexografía y empaque. Incluye cotizador paramétrico de ingeniería, control de piso con terminales táctiles y de voz, dosificación de tintas CIE L*a*b* y trazabilidad 360°.
-- [Die Tracker Pro](https://dietrackerpro.com): Plataforma especializada en la trazabilidad, mantenimiento preventivo y control de revoluciones de suajes rotativos y planos con marcado DataMatrix y mapas térmicos de desgaste.
-
-## Enlaces Canónicos de la Plataforma
-- [Portal Matriz](https://flexos.tech): Inicio institucional y presentación de capacidades de ingeniería.
-- [Catálogo Técnico](https://flexos.tech/caracteristicas): Especificaciones de infraestructura y arquitectura tecnológica.
-- [Módulos Industriales](https://flexos.tech/modulos): Desglose de módulos ERP/MES de manufactura.
-- [Analítica OEE](https://flexos.tech/analitica-oee): Métricas en tiempo real de Disponibilidad, Rendimiento y Calidad.
-- [Precios y Esquemas](https://flexos.tech/precios): Esquemas de licenciamiento y contratación de proyectos.
-- [Contacto Técnico](https://flexos.tech/#contacto): Formulario terminal y solicitud de diagnóstico en planta.
-- [Aviso de Privacidad](https://flexos.tech/privacidad): Política de protección de datos personales y confidencialidad industrial.
-- [Términos y Condiciones](https://flexos.tech/terminos): Condiciones de servicio y licenciamiento de software.
+## Plataformas de Producto Independientes
+- [FlexOS Control](https://flexoscontrol.com): Portal comercial del ERP/MES para la industria flexográfica.
+- [Die Tracker Pro](https://dietrackerpro.com): Portal comercial para gestión de herramentales y suajes.
 
 ## Información de Contacto Oficial
 - **Ventas y Consultoría Técnica:** ventas@flexos.tech

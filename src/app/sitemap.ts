@@ -12,40 +12,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/caracteristicas`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/modulos`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/analitica-oee`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/precios`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.75,
-    },
-    {
       url: `${baseUrl}/privacidad`,
       lastModified: currentDate,
       changeFrequency: "yearly",
-      priority: 0.3,
+      priority: 0.5,
     },
     {
       url: `${baseUrl}/terminos`,
       lastModified: currentDate,
       changeFrequency: "yearly",
-      priority: 0.3,
+      priority: 0.5,
     },
   ];
 }
